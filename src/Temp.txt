@@ -1,0 +1,45 @@
+class Play extends Component {
+    render() {
+        return (
+            <div className="wrapper">
+                <header>
+                    <h1>Play</h1>
+                </header>
+                <nav>
+                    <ul>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/a">Play</Link></li>
+                        <li><Link to="/b">Contact</Link></li>
+                    </ul>
+                </nav>
+            </div>
+        );
+    }
+}
+
+class Contact extends Component {
+    render() {
+        return (
+            <div className="wrapper">
+                <header>
+                    <h1>Contact</h1>
+                </header>
+                <nav>
+                    <ul>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/a">Play</Link></li>
+                        <li><Link to="/b">Contact</Link></li>
+                    </ul>
+                </nav>
+            </div>
+        );
+    }
+}
+
+render((
+    <Router history={browserHistory}>
+        <Route path="/" component={App} />
+        <Route path="/a" component={Play} />
+        <Route path="/b" component={Contact} />
+    </Router>
+), document.querySelector('#app'));
