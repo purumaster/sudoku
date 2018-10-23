@@ -1,8 +1,9 @@
 //Dependencies
-import React,{ Component, PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 
-class Button extends component{
+class Button extends React.Component{
   static propTypes = {
     email: PropTypes.string.isRequired,
     formValues: PropTypes.shape({
@@ -15,7 +16,7 @@ class Button extends component{
   constructor(props){
     super(props);
     this.state ={
-      isClicked: fales,
+      isClicked: false,
     };
     this.logFormDataToConsole = this.logFormDataToConsole.bind(this);
   }

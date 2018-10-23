@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {Link,BrowserRouter, Route, Switch} from 'react-router-dom'
+import {NavLink,BrowserRouter, Route, Switch} from 'react-router-dom'
 
 import Header from './Header';
 import Dashboard from './Dashboard';

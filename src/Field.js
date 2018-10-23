@@ -1,5 +1,7 @@
 //Dependencies
-import React, {PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+
 
 //Stateless Component /Functional Component
 const Field = (props)=>(
@@ -17,14 +19,14 @@ const Field = (props)=>(
 //certain props that will enable component // TO
 //function properly.
 Field.proptypes ={
-  label: propTypes.string.isRequired,
-  onChange: propTypes.funk.isRequired,
-  value: propTypes.string.isRequired,
-  textarea: propTypes.bool.isRequired,
+  label: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired,
+  textarea: PropTypes.bool.isRequired,
 };
 
-Filed.defaultProps ={
-  textarea: fales,
+Field.defaultProps ={
+  textarea: false,
 };
 
 export default Field;
