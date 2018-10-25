@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom'
 class Header extends Component {
     render() {
         return (
-          <div className="Header">
+          <div>
            <ul>
              <li>
                 <NavLink to= "/dashboard" exact activeStyle={
