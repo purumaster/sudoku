@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { List, fromJS } from 'immutable';
+// import { List, fromJS } from 'immutable';
 
-import MakeBoard from './MakeBoard';
+// import MakeBoard from './MakeBoard';
 
 
 class Play extends Component {

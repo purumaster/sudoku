@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import {NavLink,BrowserRouter, Route, Switch} from 'react-router-dom'
-import { List, fromJS } from 'immutable';
+// import ReactDOM from 'react-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+// import { List, fromJS } from 'immutable';
 
 import Header from './Header';
 import Dashboard from './Dashboard';
@@ -14,7 +14,8 @@ class App extends Component {
         return (
           <BrowserRouter>
           <div>
-              <h1>Sudoku</h1>
+
+              <Header />
               <nav>
               <Switch>
                  <Route exact path = "/" component={Header} />
