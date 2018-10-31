@@ -23,11 +23,39 @@ class Contact extends Component {
      this.setState({ [field]: value})
 
    }
+
+   //Fetch Function//
    getData= event => {
-     fetch('https://jsonplaceholder.typicode.com/users')
-  .then(response => response.json())
-  .then(json => console.log(json))
-   }
+     fetch('https://jsonplaceholder.typicode.com/users',{
+    method: 'POST',
+    body: JSON.stringify({
+      title: 'foo',
+      body: 'bar',
+      userId: 1
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+  })
+    fetch('https://jsonplaceholder.typicode.com/posts/1', {
+    method: 'PATCH',
+    body: JSON.stringify({
+      title: 'foo'
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+  })
+  fetch('https://jsonplaceholder.typicode.com/posts/1', {
+  method: 'DELETE'
+}) 
+
+
+
+      .then(response => response.json())
+      .then(json => console.log(json))
+
+     }
 
     render() {
         return (
@@ -49,7 +77,7 @@ class Contact extends Component {
                 <label for="inputEmail4">Email address</label>
                 <input type="email" id="inputEmail" className="form-control" placeholder="Email address" required autofocus />
                 <label for="inputComment4">Comment</label>
-                <input type="comment" id="inputComment" className="form-control" placeholder="Comment" rows="3" required />
+                <input type="comment" id="inputComment" className="form-control" placeholder="Coment" rows="3" required />
 
                 <button type="submit" className="btn btn-primary">Contact to me</button>
                 <p className="mt-5 mb-3 text-muted">&copy; 2018-2019</p>

@@ -18,7 +18,7 @@ class Header extends Component {
                   <a className="nav-item nav-link" href="/contact">Contact</a>
                 </div>
             </div>
-          </nav>
+         </nav>
          //  <div>
          //   <ul>
          //     <li>
