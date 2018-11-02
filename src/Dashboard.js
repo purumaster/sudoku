@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-
+import React, { Component } from "react";
+import APIData from "./APIData";
 
 class Dashboard extends Component {
-    render() {
-        return (
-          <h1>Dashboard</h1>
-
-        );
-    }
+  render() {
+    return (
+      <div>
+        <APIData />
+      </div>
+    );
+  }
 }
-
 
 export default Dashboard;
