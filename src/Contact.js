@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-//Externals
-// import Field from './Field';
-// import Button from './Button';
 
 class Contact extends Component {
   render() {

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-// import { List, fromJS } from 'immutable';
-// import Popover from "react-popover";
+import "./App.css";
 
 import Header from "./Header";
 import Dashboard from "./Dashboard";

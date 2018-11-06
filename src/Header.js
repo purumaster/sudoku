@@ -4,7 +4,7 @@ import React, { Component } from "react";
 class Header extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
         <a className="navbar-brand" href="/">
           Sudoku
         </a>
@@ -33,25 +33,6 @@ class Header extends Component {
           </div>
         </div>
       </nav>
-      //  <div>
-      //   <ul>
-      //     <li>
-      //        <NavLink to= "/dashboard" exact activeStyle={
-      //           {color:'red'}
-      //        }>Dashboard</NavLink>
-      //      </li>
-      //      <li>
-      //        <NavLink to= "/play" exact activeStyle={
-      //           {color:'red'}
-      //        }>Play</NavLink>
-      //      </li>
-      //      <li>
-      //        <NavLink to= "/contact" exact activeStyle={
-      //           {color:'red'}
-      //        }>Contact</NavLink>
-      //      </li>
-      //    </ul>
-      // </div>
     );
   }
 }
