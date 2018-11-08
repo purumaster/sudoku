@@ -4,25 +4,34 @@ import React, { Component } from "react";
 class Grid extends Component {
   render() {
     return (
-      <table className="table table-bordered">
+      <table className="table">
         <thead>
           <tr>
-            <th scope="col">1</th>
-            <th scope="col">2</th>
-            <th scope="col">3</th>
-            <th scope="col">4</th>
+            <th className="col-md-3">Invoice</th>
+            <th className="col-md-3">Date</th>
+            <th className="col-md-3">Amount</th>
+            <th className="col-md-3">Status</th>
+            <th className="col-md-3">Invoice</th>
+            <th className="col-md-3">Date</th>
+            <th className="col-md-3">Amount</th>
+            <th className="col-md-3">Status</th>
+            <th className="col-md-3">Status</th>
           </tr>
         </thead>
-        <thead>
+        <tbody>
           <tr>
-            <th scope="col">3</th>
-            <th scope="col">3</th>
-            <th scope="col">3</th>
-            <th scope="row">3</th>
-            <th scope="row">3</th>
-            <th scope="row">3</th>
+            <td>12345</td>
+            <td>Feb 1, 2014</td>
+            <td>$45.00</td>
+            <td>Owing</td>
           </tr>
-        </thead>
+          <tr>
+            <td>67890</td>
+            <td>Jan 30, 2014</td>
+            <td>$19.99</td>
+            <td>Overdue</td>
+          </tr>
+        </tbody>
       </table>
     );
   }

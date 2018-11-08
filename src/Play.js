@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Grid from "./Grid";
+import Check from "./Check";
 
 class Play extends Component {
   render() {

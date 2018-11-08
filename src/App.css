@@ -35,3 +35,13 @@
   text-align: center;
   font-weight: bold;
 }
+
+.table {
+  table: center;
+  width: 25px;
+  height: 20px;
+}
+
+.checkButton {
+  text-align: center;
+}
