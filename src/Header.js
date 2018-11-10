@@ -30,6 +30,9 @@ class Header extends Component {
             <a className="nav-item nav-link" href="/contact">
               Contact
             </a>
+            <a className="nav-item nav-link" href="/api">
+              API Data
+            </a>
           </div>
         </div>
       </nav>

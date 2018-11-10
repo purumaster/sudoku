@@ -7,6 +7,7 @@ import Dashboard from "./Dashboard";
 import Play from "./Play";
 import Contact from "./Contact";
 import NotFound from "./NotFound";
+import ApiData from "./APIData";
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
             <Route exact path="/" component={Dashboard} />
             <Route exact path="/Play" component={Play} />
             <Route exact path="/Contact" component={Contact} />
+            <Route exact path="/api" component={ApiData} />
             {/* 404 */}
             <Route component={NotFound} />
           </Switch>

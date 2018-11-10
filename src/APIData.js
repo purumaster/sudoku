@@ -2,10 +2,10 @@ import React, { Component } from "react";
 
 export default class APIData extends Component {
   state = {
-    users: undefined
+    users: []
   };
 
-  ReadUsers = () => {
+  componentWillMount = () => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then(response => response.json())
       // .then(json => console.log(json))
@@ -16,18 +16,63 @@ export default class APIData extends Component {
       });
   };
 
+  /*Delete API*/
+  onDelete = id => {
+    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+      method: "DELETE"
+    });
+  };
+
+  /*Update API*/
+  onUpdate = (id, data) => {
+    fetch(`https://jsonplaceholder.typicode.com/users/${(id, data)}`, {
+      method: "PUT",
+      body: JSON.stringify({
+        id: 1,
+        name: "Makimi Meyer",
+        username: "puru",
+        email: "makimi.hanawa@gmail.com",
+        userId: 1
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8"
+      }
+    })
+      .then(response => response.json())
+      .then(json => console.log(json));
+  };
+
+  /*Add API*/
+  onAdd = (id, data) => {
+    fetch(`https://jsonplaceholder.typicode.com/users/${(id, data)}`, {
+      method: "POST",
+      body: JSON.stringify({
+        id: 1,
+        name: "Makimi Meyer",
+        username: "puru",
+        email: "makimi.hanawa@gmail.com",
+        userId: 1
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8"
+      }
+    })
+      .then(response => response.json())
+      .then(json => console.log(json));
+  };
+
   render() {
-    const { users } = this.state;
     if (this.state.users && this.state.users.length) {
+      const { users } = this.state;
       return (
         <div>
           <h1>APIData</h1>
-          <button onClick={this.ReadUsers}>Push me</button>
-          <ul>
-            {users.map(user => (
-              <li>name: {user.name}</li>
-            ))}
-          </ul>
+
+          {users.map(user => (
+            <li key={user.name}>
+              {user.name} {user.price}
+            </li>
+          ))}
         </div>
       );
     } else {

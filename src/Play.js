@@ -9,7 +9,7 @@ class Play extends Component {
         <div>
           <h3 className="display-3">Sudoku</h3>
         </div>
-        <Grid />;
+        <Grid />;<Check />;
       </React.Fragment>
     );
   }
