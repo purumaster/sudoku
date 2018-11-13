@@ -44,10 +44,16 @@
   text-align: center;
 }
 
+/*Play js*/
+.display-3 {
+  text-align: center;
+}
+
 .table {
-  table: center;
-  width: 25px;
-  height: 20px;
+  border: 1px solid black !important;
+  margin: auto;
+  width: 200px;
+  height: 200px;
 }
 
 .checkButton {
