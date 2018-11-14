@@ -4,7 +4,7 @@ import React, { Component } from "react";
 class Grid extends Component {
   render() {
     return (
-      <table className="table table-bordered">
+      <table>
         <tr>
           <td> </td>
           <td> </td>
